@@ -25,9 +25,9 @@ rho1 = st.number_input('Massa Específica do Fluido 1 (kg/m³)', min_value=0.0)
 m2 = st.number_input('Vazão Mássica do Fluido 2 (kg/s)', min_value=0.0)
 Cp2 = st.number_input('Capacidade de Calor Específico do Fluido 2 (J/kg.K)', min_value=0.0)
 rho2 = st.number_input('Massa Específica do Fluido 2 (kg/m³)', min_value=0.0)
-T1i = st.number_input('Temperatura Inicial do Fluido 1 que está entrando no trocador (K)')
-T2i = st.number_input('Temperatura Inicial do Fluido 2 que está entrando no trocador (K)')
-T0 = st.number_input('Temperatura inicial do fluido que está preechendo o tubo (K)')
+T1i = st.number_input('Temperatura de entrada do fluido 1 no trocador (K)')
+T2i = st.number_input('Temperatura de entrada do fluido 2 no trocador (K)')
+T0 = st.number_input('Temperatura inicial do tubo (K)')
 U = st.number_input('Coeficiente Global de Transferência de Calor (W/m².K)', min_value=0.0)
 dx = L / n
 
