@@ -109,7 +109,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     plt.figure(fig_permanente)
     plt.plot(x, T_permanente_atual1 - 273.15, color='blue', label='Fluido 1')
     plt.plot(x, T_permanente_atual2 - 273.15, color='red', label='Fluido 2')
-    plt.xlabel('Comprimento (m)')
+    plt.xlabel('Comprimento (x)')
     plt.ylabel('Temperatura (°C)')
     plt.legend()
     st.pyplot(plt)
@@ -138,4 +138,4 @@ dt = st.number_input('Passo de Tempo (s)', min_value=0.0)
 if st.button('Rodar Simulação'):
     run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, dx, t_final, dt)
 elif st.button('Rodar Exemplo Padrão'):
-    run_simulation(60, 0.1, 0.15, 100, 3, 4180, 1000, 5, 4180, 1000, 400, 800, 300, 340, 60 / 100, 1000, 1)
+    run_simulation(50, 0.1, 0.15, 100, 3, 4180, 1000, 5, 4180, 1000, 400, 800, 300, 340, 50 / 100, 700, 1)
