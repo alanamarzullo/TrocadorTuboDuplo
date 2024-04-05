@@ -109,7 +109,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     plt.figure(fig_permanente)
     plt.plot(x, T_permanente_atual1 - 273.15, color='blue', label='Fluido 1')
     plt.plot(x, T_permanente_atual2 - 273.15, color='red', label='Fluido 2')
-    plt.xlabel('Comprimento (x)')
+    plt.xlabel('Comprimento (m)')
     plt.ylabel('Temperatura (°C)')
     plt.legend()
     st.pyplot(plt)
