@@ -72,7 +72,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     save1 = ani1.save('Variação da Temperatura - Fluido 1.gif', writer='pillow', fps=10)
     
     # Criação e exibição da figura 2
-    fig_ani2 = plt.figure(figsize=8,6))
+    fig_ani2 = plt.figure(figsize=(8,6))
     ani2 = FuncAnimation(fig_ani2, update_plot2, frames=df_Temp2.shape[0], repeat=False)
     save2 = ani2.save('Variação da Temperatura - Fluido 2.gif', writer='pillow', fps=10)
     
