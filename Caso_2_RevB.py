@@ -55,8 +55,6 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     # Função que atualiza o plot para o Fluido 1
     def update_plot1(t):
         plt.clf()
-        plt.xlabel('Comprimento (m)')  
-        plt.ylabel('Temperatura do fluido 1 ( (°C)')
         line = pd.DataFrame(df_Temp1.iloc[t, :]).T
         sns.heatmap(line, cmap=paleta_calor)
         plt.title(f'Tempo: {t} (s)')
@@ -64,8 +62,6 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     # Função que atualiza o plot para o Fluido 2
     def update_plot2(t):
         plt.clf()
-        plt.xlabel('Comprimento (m)')  
-        plt.ylabel('Temperatura do fluido 1 ( (°C)')
         line = pd.DataFrame(df_Temp2.iloc[t, :]).T
         sns.heatmap(line, cmap=paleta_calor)
         plt.title(f'Tempo: {t} (s)')
