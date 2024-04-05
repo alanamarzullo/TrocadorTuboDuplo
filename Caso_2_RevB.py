@@ -56,7 +56,6 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     def update_plot1(t):
         plt.clf()
         line = pd.DataFrame(df_Temp1.iloc[t, :]).T
-        line.set_label('aaa')
         sns.heatmap(line, cmap=paleta_calor)
         plt.title(f'Tempo: {t} (s)')
     
