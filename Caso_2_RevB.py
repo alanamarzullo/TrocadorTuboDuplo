@@ -7,7 +7,7 @@ import seaborn as sns
 from matplotlib.animation import FuncAnimation
 from seaborn.palettes import blend_palette
 
-st.title('Simulação de Transferência de Calor em um Trocador de Calor Tubo Duplo')
+st.title('Simulador TROCAL - Simulação de Transferência de Calor em um Trocador de Calor Tubo Duplo')
 st.write('Este é um simlador de um trocador de calor tubo duplo operando em correntes paralelas. Ao rodar a simulação, você poderá visualizar o perfil de temperatura dos fluidos 1 (frio) e 2 (quente) conforme o tempo passa. Você também poderá visualizar o gráfico de variação das temperaturas dos fluidos 1 e 2 quando o trocador atinge o regime permanente.')
 st.write('Ao final desta página, você também encontrará um botão que roda a simulação com um exemplo pré-definido.')
 
