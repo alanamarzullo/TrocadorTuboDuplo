@@ -57,7 +57,7 @@ Scrapy==2.6.1
 service-identity==21.1.0
 six==1.16.0
 smmap==5.0.1
-streamlit==1.12.0
+streamlit==1.27.1
 tenacity==8.2.3
 termcolor==1.1.0
 tldextract==3.2.0
