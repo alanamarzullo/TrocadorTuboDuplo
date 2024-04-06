@@ -79,10 +79,6 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     fig_ani2 = plt.figure(figsize=(8,6))
     ani2 = FuncAnimation(fig_ani2, update_plot2, frames=df_Temp2.shape[0], repeat=False)
     save2 = ani2.save('Variação da Temperatura - Fluido 2.gif', writer='pillow', fps=10)
-
-    # Definindo os títulos dos eixos x e y para a figura 1
-    plt.xlabel('Comprimento (m)')  # Título do eixo x
-    plt.ylabel('Temperatura (°C)')  # Título do eixo y
     
     # Exibindo a simulação
     with st.expander("Visualização da Simulação em tempo real para o Fluido 1 (frio) (Clique aqui para ver)"):
