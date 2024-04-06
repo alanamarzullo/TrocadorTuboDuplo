@@ -82,8 +82,10 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     
     # Exibindo a simulação
     with st.expander("Visualização da Simulação em tempo real para o Fluido 1 (frio) (Clique aqui para ver)"):
+        st.write('Variação da temperatura do fluido 1 ao longo do tempo e do comprimento.')
         st.image('Variação da Temperatura - Fluido 1.gif')
     with st.expander("Visualização da Simulação em tempo real para o Fluido 2 (quente) (Clique aqui para ver)"):
+        st.write('Variação da temperatura do fluido 2 ao longo do tempo e do comprimento.')
         st.image('Variação da Temperatura - Fluido 2.gif')
     
     # Inicialização de variáveis
