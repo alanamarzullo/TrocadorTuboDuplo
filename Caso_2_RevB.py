@@ -9,7 +9,8 @@ from seaborn.palettes import blend_palette
 
 st.title('Simulador TROCAL - Simulação de Transferência de Calor em um Trocador de Calor Tubo Duplo')
 st.write('Este é um simulador de um trocador de calor tubo duplo operando em correntes paralelas. Ao rodar a simulação, você poderá visualizar o perfil de temperatura dos fluidos 1 (frio) e 2 (quente) conforme o tempo passa. Você também poderá visualizar o gráfico de variação das temperaturas dos fluidos 1 e 2 quando o trocador atinge o regime permanente.')
-st.write('ATENÇÃO: Ao final da página, você também encontrará um botão que roda a simulação com um exemplo padrão. Este exemplo padrão leva em torno de 5 minutos para rodar.')
+st.write('ATENÇÃO: Ao final desta página, você também encontrará um botão que roda a simulação com um exemplo pré-definido ("Rodar exemplo padrão"). Este exemplo leva em torno de 5 minutos para rodar. Caso queira usar seus próprios valores, use o botão "Rodar simulação" e lembre-se de utilizar um número de nós pelo menos igual ou maior que 10, para melhor visualização dos resultados.')
+st.write('Figura exemplificando o trocador. Autoria própria.')
 
 # Carregar a imagem
 st.image('Caso 2.png', use_column_width=True)
