@@ -42,9 +42,9 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
         return dT2dt
     
     T_out1 = odeint(dT1dt_function, T1, t)
-    T_out1 = T_out1 - 273.15
+    T_out1 = T_out1
     T_out2 = odeint(dT2dt_function, T2, t)
-    T_out2 = T_out2 - 273.15
+    T_out2 = T_out2
     
     # Criação dos DataFrames
     df_Temp1 = pd.DataFrame(np.array(T_out1), columns=x)
@@ -90,7 +90,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     plt.plot(x, df_Temp1.iloc[-1, :] , color='blue', label='Fluido 1')
     plt.plot(x, df_Temp2.iloc[-1, :], color='red', label='Fluido 2')
     plt.xlabel('Comprimento (m)')
-    plt.ylabel('Temperatura (°C)')
+    plt.ylabel('Temperatura (K)')
     plt.legend()
     st.pyplot(plt)
 
