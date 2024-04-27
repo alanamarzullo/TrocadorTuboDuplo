@@ -96,6 +96,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     plt.xlabel('Comprimento (m)')
     plt.ylabel('Temperatura (K)')
     plt.legend()
+    plt.title('Temperatura dos fluidos frio e quente ao longo do comprimento do trocador no regime permanente.')
     st.pyplot(plt)
 
 st.title('Parâmetros de Entrada')
