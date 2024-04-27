@@ -9,7 +9,9 @@ from seaborn.palettes import blend_palette
 
 st.title('Simulador TROCAL - Simulação de Transferência de Calor em um Trocador de Calor Tubo Duplo')
 st.write('Este é um simulador de um trocador de calor tubo duplo operando em correntes paralelas. Ao rodar a simulação, você poderá visualizar o perfil de temperatura dos fluidos 1 (frio) e 2 (quente) conforme o tempo passa. Você também poderá visualizar o gráfico de variação das temperaturas dos fluidos 1 e 2 quando o trocador atinge o regime permanente.')
-st.write('ATENÇÃO: Ao final desta página, você também encontrará um botão que roda a simulação com um exemplo pré-definido ("Rodar exemplo padrão"). Este exemplo leva em torno de 5 minutos para rodar. Caso queira usar seus próprios valores, use o botão "Rodar simulação" e lembre-se de utilizar um número de nós pelo menos igual ou maior que 10, para melhor visualização dos resultados.')
+st.write('Este simulador utiliza as seguintes equações de balanço de energia para os fluidos frio e quente:')
+st.image('Equacoes Caso 2.png', use_column_width=True)
+st.write('ATENÇÃO: Ao final desta página, você também encontrará um botão que roda a simulação com um exemplo pré-definido ("Rodar exemplo padrão"). Este exemplo leva em torno de 5 minutos para rodar. Caso queira usar seus próprios valores, use o botão "Rodar simulação" e recomenda-se utilizar um número de nós pelo menos igual ou maior que 10, para melhor visualização dos resultados.')
 st.write('Figura exemplificando o trocador. Autoria própria.')
 
 # Carregar a imagem
@@ -80,9 +82,11 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
     # Exibindo a simulação
     with st.expander("Visualização da Simulação em tempo real para o Fluido 1 (frio) (Clique aqui para ver)"):
         st.write('Variação da temperatura do fluido 1 ao longo do tempo e do comprimento.')
+        st.write('Tempo representado acima do GIF, em segundos. Temperaturas em Kelvin representadas na escala variável do eixo y. Comprimento do trocador representado em metros no eixo x do GIF.')
         st.image('Variação da Temperatura - Fluido 1.gif')
     with st.expander("Visualização da Simulação em tempo real para o Fluido 2 (quente) (Clique aqui para ver)"):
         st.write('Variação da temperatura do fluido 2 ao longo do tempo e do comprimento.')
+        st.write('Tempo representado acima do GIF, em segundos. Temperaturas em Kelvin representadas na escala variável do eixo y. Comprimento do trocador representado em metros no eixo x do GIF.')
         st.image('Variação da Temperatura - Fluido 2.gif')
         
     # Exibindo o gráfico de variação da temperatura ao longo do comprimento em regime permanente para ambos os fluidos
