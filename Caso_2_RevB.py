@@ -62,6 +62,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
         line = pd.DataFrame(df_Temp1.iloc[t, :]).T
         sns.heatmap(line, cmap=paleta_calor)
         plt.title(f'Tempo: {t} (s)')
+        plt.gca().set_xticklabels(['{:.2f}'.format(val) for val in x])
         
     # Função que atualiza o plot para o Fluido 2
     def update_plot2(t):
@@ -69,6 +70,7 @@ def run_simulation(L, r1, r2, n, m1, Cp1, rho1, m2, Cp2, rho2, T1i, T2i, T0, U, 
         line = pd.DataFrame(df_Temp2.iloc[t, :]).T
         sns.heatmap(line, cmap=paleta_calor)
         plt.title(f'Tempo: {t} (s)')
+        plt.gca().set_xticklabels(['{:.2f}'.format(val) for val in x])
 
     # Criação e exibição da figura 1
     fig_ani1 = plt.figure(figsize=(8,6))
