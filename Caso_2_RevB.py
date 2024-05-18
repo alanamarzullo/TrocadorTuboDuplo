@@ -12,7 +12,7 @@ st.write('Este é um simulador de um trocador de calor tubo duplo operando em co
 st.write('Abaixo há uma figura exemplificando este trocador, de autoria própria.')
 st.image('Caso 2.png', use_column_width=True)
 st.write('Este tipo de trocador é comumente utilizado nas indústrias química, alimentícia e de petróleo e gás.')
-st.write('Este simulador utiliza as seguintes equações de balanço de energia para os fluidos frio e quente:')
+st.write('Este simulador utiliza as seguintes equações de balanço de energia para os fluidos frio e quente, considerando o princípio de conservação de energia:')
 st.image('Equacoes Caso 2.jpg', use_column_width=True)
 st.write('ATENÇÃO: Ao final desta página, você também encontrará um botão que roda a simulação com um exemplo pré-definido ("Rodar exemplo padrão"). Este exemplo leva em torno de 40 segundos para rodar, a depender da sua velocidade de conexão. Caso queira usar seus próprios valores, use o botão "Rodar simulação" e recomenda-se utilizar um número de nós pelo menos igual ou maior que 10, para melhor visualização dos resultados. Além disso, a temperatura de entrada do fluido frio deve ser menor que a temperatura de entrada do fluido quente, caso cantrário, o modelo pode não funcionar corretamente.')
 
